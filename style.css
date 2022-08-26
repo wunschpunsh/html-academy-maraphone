@@ -1,0 +1,301 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*--------------------*/
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  background-color: #EFE6E4;
+  color: #533738;
+
+}
+
+.nav__item-link {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.advantages {
+  background-image: url('./img/main-background.jpg');
+}
+
+.advantages__title {
+  font-size: 50px;
+  line-height: 62px;
+}
+
+.advantages__description {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.prime-button {
+  display: block;
+  box-sizing: border-box;
+  padding: 25px 66px;
+  width: 310px;
+  height: 74px;
+  background-color: #CC8B86;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about-us__title {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.about-us__text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about-us__text-advantages {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.achievements__list {
+  background-color: #8D7370;
+}
+
+.achievements__item {
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.achievements__item-number {
+  font-size: 50px;
+  line-height: 62px;
+}
+
+.example-works__title {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.room__container {
+  background: rgba(100, 72, 69, 0.8);
+}
+
+.room__title {
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.room__description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.example-works__button {
+  font-size: 30px;
+  line-height: 37px;
+  color: #533738;
+  background-color: inherit;
+}
+
+.team__title {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.members__item-description {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.team__skills-title {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.skills {
+  background-color: #E2C4BA;
+}
+
+.skills__item-number {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: #533738;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.skills__item-description {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.reviews__button {
+  width: 72px;
+  height: 72px;
+  border-radius: 50px;
+  background-color: #CC8B86;
+}
+
+.reviews__title {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.reviews__text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__text-author {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.feedback {
+  background-color: #8D7370;
+}
+
+.feedback__form-title {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.feedback__form-description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.feedback__form-input::placeholder {
+  color: #F6EDE9;
+  background-color: #8D7370;
+}
+
+.contacts__phone, .contacts__adress, .main-footer__company-details {
+  font-size: 18px;
+  line-height: 30px;
+}
