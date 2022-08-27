@@ -12,39 +12,40 @@
 
 <body class="page-body">
   <header class="main-header">
-    <div class="main-header__contaier">
-      <img class="main-header__logo" src="./img/header-logo.svg" width="91" height="25" alt="логотип студии дизайна">
-      <nav class="main-header__nav nav">
-        <div class="nav__container">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__item-link">О компании</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__item-link">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__item-link">Команда</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__item-link">Как мы работаем</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__item-link">Отзывы клиентов</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__item-link">Оставить заявку</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__item-link">+7 (981) 857-46-24</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <main class="main-index">
-    <section class="advantages">
+    <nav class="main-header__nav nav">
+      <div class="nav__container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">
+              <img class="nav__item-link-logo" src="./img/header-logo.svg" width="91" height="25"
+                alt="логотип студии дизайна">
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">Команда</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">Как мы работаем</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">Отзывы клиентов</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">Оставить заявку</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">+7 (981) 857-46-24</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-header__advantages advantages">
       <div class="advantages__container">
         <h1 class="advantages__title">Поможем сделать
           вашу квартиру
@@ -59,25 +60,24 @@
           Оставить заявку
         </a>
       </div>
-    </section>
+    </div>
+  </header>
+  <main class="main-index">
     <section class="about-us">
       <div class="about-us__container">
         <h2 class="about-us__title">
           О Нас
         </h2>
-        <div class="about-us__image-container">
-          <img class="about-us__image" src="./img/table-setting.jpg" width="444" height="465"
+        <div class="about-us__content-wrapper">
+          <img class="about-us__content-image" src="./img/table-setting.jpg" width="444" height="465"
             alt="образец сервировки стола в бежевых тонах">
-        </div>
-        <div class="about-us__text-container">
-          <p class="about-us__text">
+          <p class="about-us__content-text">
             Премиальный европейский текстиль — одно из самых главных направлений работы коллектива.
             Создавать
             неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,
             что
             по-настоящему вдохновляет дизайнеров нашей студии.
-          </p>
-          <p class="about-us__text-advantages">
+
             Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
             « Да! Это именно то, что действительно достойно моего дома!»
           </p>
@@ -101,10 +101,11 @@
     </section>
     <section class="example-works">
       <div class="example-works__container">
+
+        <h2 class="example-works__title">
+          Наши работы
+        </h2>
         <div class="example-works__wrap">
-          <h2 class="example-works__title">
-            Наши работы
-          </h2>
           <div class="example-works__description room">
             <div class="room__container">
               <h3 class="room__title">
@@ -127,10 +128,11 @@
           <img class="example-works__image-bath" src="./img/bathroom.jpg" width="488" height="451"
             alt="образец дизайна ванной">
         </div>
-        <div class="example-works__button-container">
-          <button class="example-works__button">Смотреть еще</button>
-        </div>
       </div>
+      <div class="example-works__button-container">
+        <button class="example-works__button">Смотреть еще</button>
+      </div>
+
     </section>
     <section class="team">
       <div class="team__container">
@@ -216,11 +218,12 @@
       </div>
     </section>
     <section class="reviews">
+
+      <h2 class="reviews__title">
+        Отзывы
+      </h2>
       <div class="reviews__container">
-        <h2 class="reviews__title">
-          Отзывы
-        </h2>
-        <button class="reviews__button">
+        <button class="reviews__button reviews__button--prev">
           <span class="visually-hidden">Назад</span>
         </button>
         <div class="reviews__text-container">
@@ -237,7 +240,7 @@
           </p>
         </div>
         <div class="reviews__image-container">
-          <img class="reviews__image" src="./img/review-living-room.jpg" width="407" height="272"
+          <img class="reviews__image reviews__image-top" src="./img/review-living-room.jpg" width="407" height="272"
             alt="фотография гостинной с отзыва клиента">
           <img class="reviews__image" src="./img/review-litchen.jpg" width="407" height="272"
             alt="фотография кухни с отзыва клиента">
@@ -248,40 +251,42 @@
       </div>
     </section>
     <section class="feedback map">
-      <div class="feedback__form-container">
-        <h2 class="feedback__form-title">
-          Оставить заявку
-        </h2>
-        <p class="feedback__form-description">
-          Оставьте свои контакты. Менеджер перезвонит
-          в удобное вам время и ответит на все вопросы.
-        </p>
-        <form class="feedback__form">
-          <label class="feedback__form-field">
-            <input class="feedback__form-input" type="text" name="user-name" placeholder="Ваше имя">
-          </label>
-          <label class="feedback__form-field">
-            <input class="feedback__form-input" type="tel" name="user-phone" placeholder="Ваш телефон">
-          </label>
-          <button type="submit" class="feedback__form-button prime-button">
+      <div class="feedback__wrapper">
+        <div class="feedback__form-container">
+          <h2 class="feedback__form-title">
             Оставить заявку
-          </button>
-        </form>
-      </div>
-      <div class="map__container">
-        <img class="map" src="./img/adress-map.png" width="590" height="624" alt="наш адресс на карте">
+          </h2>
+          <p class="feedback__form-description">
+            Оставьте свои контакты. Менеджер перезвонит
+            в удобное вам время и ответит на все вопросы.
+          </p>
+          <form class="feedback__form">
+            <label class="feedback__form-field feedback__form-field--top">
+              <input class="feedback__form-input" type="text" name="user-name" placeholder="Ваше имя">
+            </label>
+            <label class="feedback__form-field feedback__form-field--bottom">
+              <input class="feedback__form-input" type="tel" name="user-phone" placeholder="Ваш телефон">
+            </label>
+            <button type="submit" class="feedback__form-button prime-button">
+              Оставить заявку
+            </button>
+          </form>
+        </div>
+        <div class="map__container">
+          <img class="map" src="./img/adress-map.png" width="590" height="624" alt="наш адресс на карте">
+        </div>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__container">
-      <div class="main-footer__contacts-wrap contacts">
-        <span class="contacts__phone">+7 (981) 857-46-24</span>
-        <span class="contacts__adress">г. Санкт-петербург, ул. Большая Конюшенная, 19</span>
-      </div>
-      <span class="main-footer__company-details">
-        ИП Королёва А.А.
-      </span>
+    <div class="main-footer__container contacts">
+      <ul class="contacts__list">
+        <li class="contacts__item">+7 (981) 857-46-24</li>
+        <li class="contacts__item">г. Санкт-петербург, ул. Большая Конюшенная, 19</li>
+        <li class="contacts__item">
+          ИП Королёва А.А.
+        </li>
+      </ul>
     </div>
   </footer>
 </body>
