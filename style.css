@@ -110,33 +110,35 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 
 body {
+  width: 1400px;
+  margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   background-color: #EFE6E4;
   color: #533738;
-  width: 1400px;
-  margin: 0 auto;
 }
 
 .nav__item-link {
   font-size: 16px;
   line-height: 20px;
+  color: #533738;
 }
 
 .main-header {
   background-image: url('./img/main-background.jpg');
+  background-size: cover;
 }
 
 .advantages__title {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   font-size: 50px;
   line-height: 62px;
 }
 
 .advantages__description {
-  margin-bottom: 21px;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -144,13 +146,14 @@ body {
 .prime-button {
   display: block;
   box-sizing: border-box;
-  padding: 25px 66px;
   width: 310px;
   height: 74px;
-  background-color: #CC8B86;
+  padding: 25px 66px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  background-color: #CC8B86;
+  color: #533738;
 }
 
 .about-us__title {
@@ -160,8 +163,13 @@ body {
 }
 
 .about-us__content-text {
+  margin-bottom: 30px;
   font-size: 18px;
   line-height: 30px;
+}
+
+.about-us__content-text:last-child {
+  margin-bottom: 0;
 }
 
 .about-us__content-text-advantages {
@@ -170,13 +178,14 @@ body {
 }
 
 .achievements__container {
-  padding: 87px 180px 79px;
+  padding: 87px 63px 69px;
   margin-bottom: 67px;
   background-color: #8D7370;
 }
 
 .achievements__list {
   display: grid;
+  justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -184,15 +193,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
   font-size: 30px;
   line-height: 37px;
-  color: #ffffff;
   text-transform: uppercase;
+  color: #ffffff;
+}
+
+.achievements__item:not(:first-child) {
+  margin-left: 56px;
 }
 
 .achievements__item-number {
   display: block;
   margin: 0 auto;
+  margin-bottom: 8px;
   font-size: 50px;
   line-height: 62px;
 }
@@ -222,11 +237,18 @@ body {
   column-gap: 20px;
 }
 
+.room__container {
+  padding: 86px 35px 122px;
+  background-color: rgba(100, 72, 69, 0.8);
+}
+
 .room {
-  background: rgba(100, 72, 69, 0.8);
+  background-image: url("./img/bedroom.jpg");
+  background-size: 488px 451px;
 }
 
 .room__title {
+  margin-bottom: 18px;
   font-size: 30px;
   line-height: 37px;
   text-align: center;
@@ -240,10 +262,14 @@ body {
 }
 
 .example-works__button {
+  padding-right: 71px;
   font-size: 30px;
   line-height: 37px;
-  color: #533738;
   background-color: inherit;
+  background-image: url("./img/show-more-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: #533738;
 }
 
 .example-works__button-container {
@@ -262,7 +288,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   font-size: 40px;
   line-height: 50px;
   text-transform: uppercase;
@@ -293,6 +319,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+  margin-left: 43px;
   font-size: 40px;
   line-height: 50px;
   text-transform: uppercase;
@@ -320,15 +347,17 @@ body {
 
 .skills__item-number {
   display: block;
+  position: relative;
+  z-index: 10;
   width: 70px;
   height: 70px;
   margin-bottom: 20px;
-  background-color: #533738;
   border-radius: 50%;
   font-weight: 500;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 70px;
   text-align: center;
+  background-color: #8D7370;
   color: #FFFFFF;
 }
 
@@ -355,6 +384,38 @@ body {
 
 .reviews__button--prev {
   margin-right: 29px;
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.reviews__button--prev::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 39%;
+  left: 24%;
+  width: 36px;
+  height: 16px;
+  background-image: url("./img/arrow-button-reviews.svg");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.reviews__button--next {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.reviews__button--next::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 38%;
+  left: 27%;
+  width: 36px;
+  height: 16px;
+  background-image: url("./img/arrow-button-reviews.svg");
+  background-repeat: no-repeat;
 }
 
 .reviews__text-container {
@@ -376,15 +437,18 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+  margin-left: 19px;
   font-size: 40px;
   line-height: 50px;
   text-transform: uppercase;
 }
 
 .reviews__text {
+  margin-bottom: 28px;
   font-size: 18px;
   line-height: 30px;
 }
+
 
 .reviews__text-author {
   font-size: 18px;
@@ -401,7 +465,7 @@ body {
 }
 
 .feedback__form-container {
-  width: 50%;
+  width: 51%;
   padding: 50px 20px 186px 182px;
 }
 
@@ -411,7 +475,7 @@ body {
 }
 
 .feedback__form-title {
-  margin-bottom: 24px;
+  margin-bottom: 19px;
   font-size: 40px;
   line-height: 50px;
   text-transform: uppercase;
@@ -427,16 +491,25 @@ body {
 }
 
 .feedback__form-description {
-  margin-bottom: 44px;
+  margin-bottom: 47px;
   font-size: 18px;
   line-height: 30px;
   color: #FFFFFF;
   opacity: 0.6;
 }
 
-.feedback__form-input::placeholder {
-  color: #F6EDE9;
+.feedback__form-input {
+  height: 35px;
+  width: 508px;
+  border-bottom: 1px solid #FFFFFF;
   background-color: #8D7370;
+}
+
+.feedback__form-input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #F6EDE9;
 }
 
 .map__container {
@@ -444,11 +517,12 @@ body {
 }
 
 .main-footer__container {
-  padding: 37px 100px;
+  padding: 31px 100px;
 }
 
 .contacts__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__item {
@@ -476,19 +550,28 @@ body {
 
 .nav__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav__container {
-  padding: 36px 100px 90px;
+  padding: 35px 102px 90px 98px;
 }
 
 .advantages__container {
   padding: 2px 682px 168px 184px;
 }
 
+
+.nav__item:not(:last-child) {
+  margin-right: 29px;
+}
+
+.nav__item:last-child {
+  margin-left: 5px;
+}
+
 .nav__item-link-logo {
-  margin-right: 89px;
+  margin-right: 61px;
 }
 
 .about-us__container {
@@ -504,6 +587,10 @@ body {
 
 .about-us__content-wrapper {
   display: flex;
+}
+
+.about-us__content-text-wrapper {
+  width: 51%;
 }
 
 .about-us__content-image {
